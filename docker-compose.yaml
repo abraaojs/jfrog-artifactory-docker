@@ -11,7 +11,7 @@ services:
       - "$PWD/artifactory-data/backup:/opt/jfrog/artifactory/backup"
       - "$PWD/artifactory-data/etc:/opt/jfrog/artifactory/etc"
     restart: always
-    command: --acme-domain artifactory.s4bdigital.net
+    command: --acme-domain localhost
 # environment:
 #    - EXTRA_JAVA_OPTIONS=-Xmx4g
     ports:
