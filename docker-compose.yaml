@@ -13,9 +13,10 @@ services:
     restart: always
     command: --acme-domain artifactory.s4bdigital.net
 # environment:
+#    - EXTRA_JAVA_OPTIONS=-Xmx4g
     ports:
-     - "80:880/tcp"
-     - "443:8443/tcp"
+     - "80:8081"
+#     - "443:443"
 #     - '5005:5005'
 #     - '5006:5006'
 #     - '5007:5007'
